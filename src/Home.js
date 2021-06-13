@@ -17,7 +17,7 @@ import { Switch, Route, Link as RouterLink } from "react-router-dom";
 const user_id = localStorage.getItem("user_id");
 const token = localStorage.getItem("token");
 
-const url = "/userprofile";
+const url = "https://student-network-backend-stage.herokuapp.com/userprofile";
 
 const url_all = "/getallmatches";
 const url_incoming = "/getincomingrequests";

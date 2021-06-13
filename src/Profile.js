@@ -4,7 +4,7 @@ const React = require("react");
 const axios = require("axios");
 
 
-const url = "/userprofile"
+const url = "https://student-network-backend-stage.herokuapp.com/userprofile"
 
 
 class Profile extends React.Component {
@@ -52,5 +52,3 @@ class Profile extends React.Component {
 }
 
 export default Profile;
-
-

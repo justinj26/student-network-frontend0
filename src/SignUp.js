@@ -11,8 +11,8 @@ const React = require("react");
 const countries_json = require("all-countries-and-cities-json");
 // thought: user likely from a different page
 // const user = {};
-const basic_login_url = "/signup";
-const user_info_url = "/updateprofile"
+const basic_login_url = "https://student-network-backend-stage.herokuapp.com/signup";
+const user_info_url = "https://student-network-backend-stage.herokuapp.com/updateprofile"
 
 const student_status = ["High School", "Undergraduate", "Graduate"];
 const years = ["1", "2", "3", "4"];

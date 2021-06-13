@@ -21,7 +21,7 @@ const React = require("react");
 const axios = require("axios");
 
 // url to get all users
-const url = "/users";
+const url = "https://student-network-backend-stage.herokuapp.com/users";
 
 class Filter extends React.Component {
   constructor(props) {
@@ -116,7 +116,7 @@ class Filter extends React.Component {
       users_to_display = users_to_display.filter(user => user.major === this.state.filter_major2)
     }
     if (this.state.filter_extracurricular1 !== "") {
-      users_to_display = users_to_display.filter(user => user.extracurricular1 === this.state.filter_extracurricular1)
+      users_to_display = users_to_display.filter(user => user.intersts.member(this.state.filter_extracurricular1))
     }
     if (this.state.filter_extracurricular2 !== "") {
       users_to_display = users_to_display.filter(user => user.extracurricular2 === this.state.filter_extracurricular2)
